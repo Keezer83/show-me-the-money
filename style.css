@@ -1,18 +1,17 @@
-body {
-  border: 2px solid blue;
-}
 header {
   display: flex;
   justify-content: center;
-  border: 2px solid red;
+  background-color: #009879;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .expenseEntry {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  border: 2px solid green;
 }
 .expenseTable {
   border-collapse: collapse;
@@ -52,4 +51,20 @@ input[type="text"] {
   padding: 10px;
   border: 0;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+button {
+  width: 150px;
+  height: 25px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  background: #009879;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
