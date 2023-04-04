@@ -10,30 +10,56 @@
   <body>
     <header class="expenseTitle"><h1>Where did all the money go?</h1></header>
     <div class="expenseEntry">
-      <label for="when">When</label>
-      <input type="text" name="When" id="when" class="expenseInputs" />
-      <label for="what"> What</label>
-      <input type="text" name="What" id="what" class="expenseInputs" />
-      <label for="howMuch">How Much?</label>
-      <input type="text" name="howMuch" id="howMuch" class="expenseInputs" />
-      <label for="where">Where</label>
-      <input type="text" name="Where" id="where" class="expenseInputs" />
+      <!-- <label for="when">When</label> -->
+      <input
+        type="text"
+        name="When"
+        id="when"
+        class="expenseInputs"
+        placeholder="When"
+      />
+      <!-- <label for="what"> What</label> -->
+      <input
+        type="text"
+        name="What"
+        id="what"
+        class="expenseInputs"
+        placeholder="What"
+      />
+      <!-- <label for="howMuch">How Much?</label> -->
+      <input
+        type="text"
+        name="howMuch"
+        id="howMuch"
+        class="expenseInputs"
+        placeholder="How Much?"
+      />
+      <!-- <label for="where">Where</label> -->
+      <input
+        type="text"
+        name="Where"
+        id="where"
+        class="expenseInputs"
+        placeholder="Where"
+      />
       <button type="submit" class="add-expense" id="addExpense">
         Add Expense
       </button>
     </div>
-    <table class="expenseTable" id="expenseTable">
-      <thead class="tableHeader">
-        <tr>
-          <th>When</th>
-          <th>What</th>
-          <th>How Much?</th>
-          <th>Where</th>
-          <th><button type="submit">delete</button></th>
-        </tr>
-      </thead>
-      <tbody class="expenseItem" id="expenseItem"></tbody>
-    </table>
+    <div class="wrap">
+      <table class="expenseTable" id="expenseTable">
+        <thead class="tableHeader">
+          <tr>
+            <th>When</th>
+            <th>What</th>
+            <th>How Much?</th>
+            <th>Where</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="expenseItem" id="expenseItem"></tbody>
+      </table>
+    </div>
     <script src="expenses.js"></script>
   </body>
 </html>

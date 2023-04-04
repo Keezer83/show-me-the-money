@@ -1,6 +1,55 @@
 body {
+  border: 2px solid blue;
+}
+header {
   display: flex;
   justify-content: center;
+  border: 2px solid red;
+}
+
+.expenseEntry {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+
+  border: 2px solid green;
+}
+.expenseTable {
+  border-collapse: collapse;
+  margin: 25px auto;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.expenseTable thead tr {
+  background-color: #009879;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.expenseTable th,
+.expenseTable td {
+  padding: 12px 15px;
+}
+
+.expenseTable tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.expenseTable tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.expenseTable tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }

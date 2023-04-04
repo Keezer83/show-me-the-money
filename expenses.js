@@ -1,7 +1,7 @@
 //Get the inputs and table elements and create the event listener for adding an expense
 document.getElementById("addExpense").addEventListener("click", addExpense);
 const expenseBody = document.getElementById("expenseItem");
-let expenseInputs = document.querySelector(".expenseInputs");
+let expenseInputs = document.querySelectorAll(".expenseInputs");
 
 //function that creates and object for each expense line with the entered values and adds it to the table
 function addExpense() {
@@ -40,4 +40,7 @@ function addExpense() {
     expenseWhere,
     deleteExpense
   );
+  expenseInputs.forEach(function (input) {
+    input.value = "";
+  });
 }
