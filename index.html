@@ -5,6 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Show Me the Money</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="expenseTitle"><h1>Where did all the money go?</h1></header>
+    <div class="expenseEntry">
+      <label for="when">When</label>
+      <input type="text" name="When" id="when" class="expenseInputs" />
+      <label for="what"> What</label>
+      <input type="text" name="What" id="what" class="expenseInputs" />
+      <label for="howMuch">How Much?</label>
+      <input type="text" name="howMuch" id="howMuch" class="expenseInputs" />
+      <label for="where">Where</label>
+      <input type="text" name="Where" id="where" class="expenseInputs" />
+      <button type="submit" class="add-expense" id="addExpense">
+        Add Expense
+      </button>
+    </div>
+    <table class="expenseTable" id="expenseTable">
+      <thead class="tableHeader">
+        <tr>
+          <th>When</th>
+          <th>What</th>
+          <th>How Much?</th>
+          <th>Where</th>
+          <th><button type="submit">delete</button></th>
+        </tr>
+      </thead>
+      <tbody class="expenseItem" id="expenseItem"></tbody>
+    </table>
+    <script src="expenses.js"></script>
+  </body>
 </html>
